@@ -1,32 +1,30 @@
 # Lab 1 — Configuração do Ambiente
 
-Template de partida para o **Lab 1** de Distributed Systems 2026/27.
+**Nome:** Miguel Pereira Pinto Lopes
+**Número de estudante:** a22404033
 
-Ao contrário dos templates seguintes, este está deliberadamente quase vazio. O Lab 1 é onde geras o teu primeiro projeto Spring Boot tu próprio, a partir do [start.spring.io](https://start.spring.io), e aprendes mais fazendo isso do que recebendo um já pronto.
+## Ambiente
 
-## A usar este template
+```bash
+java -version
+```
+```
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+```
 
-Carrega em **Use this template → Create a new repository**. Dá-lhe o nome `lab-01-environment-setup-aXXXXXXXX`, por exemplo `lab-01-environment-setup-a20250123`. Em minúsculas, sem espaços, número de aluno com o `a` à frente — é a regra em toda a cadeira, e associamos repositórios a alunos pelo número.
+```bash
+./mvnw -version
+```
+```
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+Maven home: C:\Users\migue\.m2\wrapper\dists\apache-maven-3.9.16\0daed3be3ebd1c706f0e69e8b07c6b73f5cc4ea3dfce72a8d0ec2e849ca2ddb0
+Java version: 25.0.4.1, vendor: Eclipse Adoptium, runtime: C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot
+Default locale: pt_PT, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+```
 
-## O que vai aqui dentro
-
-Gera o projeto com as definições em
-[O teu primeiro projeto Spring Boot](https://github.com/DistributedSystems-Lusofona27/course-docs/blob/main/labs/lab-01-environment-setup/first-spring-boot-project.md)
-e faz commit dele para este repositório:
-
-- Group `pt.ulusofona.cd`, artifact `hello-service`, package `pt.ulusofona.cd.hello`
-- Java 25, Spring Boot 4.1.0, Maven
-- Dependência: Spring Web
-
-A aplicação corre na porta 8080 e responde em `/hello`.
-
-## Antes de entregares
-
-- [ ] `./mvnw clean package` tem sucesso a partir de um clone novo
-- [ ] `./mvnw spring-boot:run` arranca e `/hello` responde
-- [ ] A raiz do package é `pt.ulusofona.cd.hello` — não `com.example.*`
-- [ ] Mais do que um commit, com mensagens que dizem o que mudou
-- [ ] `target/` não está committed
-
-Os detalhes completos, incluindo como é avaliado, estão na página de
-[Entrega](https://github.com/DistributedSystems-Lusofona27/course-docs/blob/main/labs/lab-01-environment-setup/delivery.md).
+```bash
+docker compose version
+```
