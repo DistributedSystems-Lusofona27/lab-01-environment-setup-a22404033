@@ -25,6 +25,26 @@ Default locale: pt_PT, platform encoding: UTF-8
 OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
 ```
 
+
+## Como correr o serviço
+
+```bash
+./mvnw spring-boot:run
+```
+
+A aplicação arranca na porta `8080`.
+
+## Endpoints
+
+| Método | Path | Resposta |
+| --- | --- | --- |
+| GET | `/hello` | `Hello from pt.ulusofona.cd` |
+| GET | `/actuator/health` | `{"status":"UP"}` |
+
+## Notas
+
+Tudo a funcionar sem problemas.
+
 ```bash
 docker compose version
 ```
